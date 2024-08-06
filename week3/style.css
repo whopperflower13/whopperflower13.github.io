@@ -1,0 +1,50 @@
+ 
+ terminologies
+ {} -curly braces
+ [] -square brackets
+ () -round brackets
+
+ > -right arrow
+ < -left arrow
+ / -backslash
+
+ * {
+    color: #bd26c0;
+ }
+/* this is a universal selector that will control all the elements!*/
+
+h1 {
+    color: #c04646;
+}
+
+ /* h2{
+    color: #e37cec;
+ } */
+
+p, h2 {
+   color: pink; 
+ }
+/* this is a element based selector. it can specify which style to apply! */
+
+ .my-class{
+    color: indianred;
+ }
+ /* classes apply style to multiple elements! 
+ element and classes are commonly used for styling*/
+
+ #my-id {
+    color: magenta;
+ }
+ /* id applies style to an individual element within a class!
+ id is used more in java */
+
+p  strong {
+    color: black;
+}
+/* relationship directed selector  > will  */
+
+/* span {
+    display: block;
+} */
+/* this will make inline element to be a block element */
+
