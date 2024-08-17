@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Fauna+One&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poiret+One&display=swap" rel="stylesheet">
 
     <!-- alt z to fit screen -->
 </head>
@@ -17,8 +17,18 @@
     <h2 class="headingfont" id="myname">Minami Nakamata</h2>
 
     <a href="../home/index.html">go to home</a>
-<br>
+<br><br>
 
+<div class="container" id="one">
+    <!-- <img src="../assets/images.png" alt="q1before" style="width:100%"> -->
+     <!-- here i originally intended to create a image and textbox together in html, however due to the transition function it was better to set the background in css -->
+    <div class="text-block">
+        <h3 class="question" id="q1">Q1 <span>What was the first thing you paid attention to when interacting with the experience?
+        </span></h3>
+        <p class="answer" id="a1">I was zooming in on the browser, hoping zooming in on the background would trigger the webpage to progress. Finally I was able to figure out that resizing the width of the browser was the trigger, greeted by an animation of the sun rising as I narrowed the browser tab. It gave me insight on bringing the mobile ui into the pc browser.</p>
+        <!-- here i used css to change the text content on hover -->
+    </div>
+</div>
      <!-- questions on paragraph -->
    
     
@@ -28,39 +38,115 @@
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur dolores cupiditate consequuntur magni eaque sapiente ducimus. Magnam exercitationem sint ab.</p>
       -->
      
-    <h3 id="q1">Q1 <span>What was the first thing you paid attention to when interacting with the experience?
-    </span></h3>
-         <p id="a1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur dolores cupiditate consequuntur magni eaque sapiente ducimus. Magnam exercitationem sint ab.</p>
     <!-- changed to using h3 and span to display q1 in title font and question text in regular font -->
-    <h3 id="q2">Q2 <span>Spend two minutes with the experience and create a list of each of your discrete actions.</span></h3>
-        <p id="a2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab dicta velit earum et voluptatibus accusamus praesentium eius numquam ipsam nulla.</p>
-    <h3 id="q3">Q3 <span>What part of the experience did you spend the most time engaging with?</span></h3>
-        <p id="a3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad ratione eaque quod dolorum voluptatibus. A expedita cumque quaerat laboriosam odio.</p>
-    <h3 id="q4">Q4 <span>What was the most common action in your two minute interaction with the experience?</span></h3>
-        <p id="a4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis id excepturi expedita tempora maxime vitae dolorem fugit earum ducimus doloremque.</p> 
-   <h3 id="q5">Q5 <span>What is your impression of the intended primary goal of the interactive experience?</span></h3>
-        <p id="a5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet nam, repudiandae quas totam aliquam sed ad quod magni exercitationem? Maiores.</p>
-    <h3 id="q6">Q6 <span>How does the interactive experience communicate this primary goal?</span></h3> 
-        <p id="a6">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas, ut.</p>
-    <h3 id="q7">Q7 <span>What is your impression of how the experience should be interacted with over time? (For how long and how many different times)</span></h3>  
-        <p id="a7">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident corrupti fugit eveniet placeat ea perferendis dolor. Praesentium dolorum harum enim?</p>
-    <h3 id="q8">Q8 <span>How does the interactive experience communicate how it should be interacted with over time?</span></h3>
-        <p id="a8">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis reprehenderit dignissimos incidunt facere praesentium, a esse officiis ab perferendis vero.</p>
-    <h3 id="q9">Q9 <span>What other media forms (digital or otherwise) does the experience reference?</span></h3>
-        <p id="a9">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius harum fugiat facilis eligendi autem ipsa nulla, laborum ad fuga quisquam.</p>
-    <h3 id="q10">Q10 <span>What does this reference/s communicate to you about how you should act when engaging with your research experience?</span></h3>
-        <p id="a10">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur minima suscipit rem, omnis inventore sed facilis velit repellat quod sapiente.</p>
-    <h3 id="q11">Q11 <span>What does this reference/s communicate to you about how you should feel when engaging with your research experience?</span></h3>
-        <p id="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium aperiam quos praesentium? Id obcaecati, ipsam ullam eum aliquam minima consectetur.</p>
-    <h3 id="q12">Q12 <span>What is the most frustrating part of the interaction to you and what makes that part frustrating?</span></h3>
-        <p id="a12">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi impedit cum vero error ipsum nostrum totam similique? Odit, dolores laboriosam.</p>
-    <h3 id="q13">Q13 <span>What is the most satisfying part of the interaction to you and what makes that part satisfying?</span></h3>
-        <p id="a13">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam vitae corporis enim consequatur molestias? Laborum corrupti unde quam modi vel!</p>
+
+    <div class="container" id="two">
+        <div class="text-block">
+            <h3 class="question" id="q2">Q2 <span>Spend two minutes with the experience and create a list of each of your discrete actions.</span></h3>
+            <p class="answer" id="a2">
+                    <li>Struggling to “resize browser”</li>
+                    <li>Trying to decode finger input with mouse input</li>
+                    <li>Astonished by the visuals; how they are animated and react to the user input (shadows of the helicopter in start screen)</li>
+                    <li>Following the navigation tutorial</li>
+                    <li>Fidgeting with the sound design (music stops on mouse hold, focusing on environmental sound in each scene)
+                    </li>
+                    <li>Panning around each environment, looking for easter eggs and view the whole scene
+                    </li>
+                    <li>Moving the dial to progress time
+                    </li>
+                
+                
+        </p>
+        </div>
+    </div>
+
+    <div class="container" id="three">
+        <div class="text-block">
+            <h3 class="question" id="q3">Q3 <span>What part of the experience did you spend the most time engaging with?</span></h3>
+            <p class="answer" id="a3">I enjoyed the animation sequence in each scene the most. The irregular appearance triggers (start, interaction, secret) kept me entertained and focused. I found myself analysing the colors, sound, and animation while watching the short movies.</p>
+        </div>
+    </div>
+
+    <div class="container" id="four">
+            <div class="text-block">
+                <h3 class="question" id="q4">Q4 <span>What was the most common action in your two minute interaction with the experience?</span></h3>
+                <p class="answer" id="a4">I spent most of my time simply admiring the audio and visuals, immersing myself in an italian summer dream from my cold melbourne home. I was panning around in search of the secret elements, or closing my eyes to dream of what summer would be.</p>
+            </div>
+        </div>
+
+    <div class="container" id="five">
+            <div class="text-block">
+                <h3 class="question" id="q5">Q5 <span>What is your impression of the intended primary goal of the interactive experience?</span></h3>
+                <p class="answer" id="a5">I think the primary goal of this website is to provide the user with the ideal eternal summer experience, embracing the season, to make users crave for a summer getaway. They absolutely nailed it, making me want to travel to a warmer climate as soon as possible.</p>
+            </div>
+        </div>
+
+    <div class="container" id="six">
+            <div class="text-block">
+                <h3 class="question" id="q6">Q6 <span>How does the interactive experience communicate this primary goal?</span></h3>
+                <p class="answer" id="a6">The audio and visuals strongly contribute to the primary goal, through the summer aesthetic of animation and music. The user is dragged into the experience through immersive audio features and an easter egg hidden to keep the users attention and providing the goal further contribution with interactivity.</p>
+            </div>
+        </div>
+
+    <div class="container" id="seven">
+        <div class="text-block">
+            <h3 class="question" id="q7">Q7 <span>What is your impression of how the experience should be interacted with over time? (For how long and how many different times)</span></h3>
+            <p class="answer" id="a7">The more the experience is interacted with, the less time will be spent on the animation like i did, instead i was driven more to the scene view of each timeframe.
+                I also headed to the product page to see how the inspiration (eternal summer) influenced the product (Richard Mille watch).
+                </p>
+        </div>
+    </div>
+   
+    <div class="container" id="eight">
+            <div class="text-block">
+                <h3 class="question" id="q8">Q8 <span>How does the interactive experience communicate how it should be interacted with over time?</span></h3>
+                <p class="answer" id="a8">Yes. The interactive experience is largely connected to sound and controlling what the user sees. I think this choice keeps the interactive element less boring even toward the end of the experience and or future revisits to the website.</p>
+            </div>
+        </div>
+
+    <div class="container" id="nine">
+            <div class="text-block">
+                <h3 class="question" id="q9">Q9 <span>What other media forms (digital or otherwise) does the experience reference?</span></h3>
+                <p class="answer" id="a9">The watch and this advertisement campaign is inspired by Memphis Design, an Italian art movement from the 1980s. The watch was inspired by the vibrant and dynamic use of color and shape of Memphis design. Richard Mille has incorporated the design into their innovative and high performance watch products.</p>
+            </div>
+        </div>
+
+    <div class="container" id="ten">
+            <div class="text-block">
+                <h3 class="question" id="q10">Q10 <span>What does this reference/s communicate to you about how you should act when engaging with your research experience?</span></h3>
+                <p class="answer" id="a10">The philosophy behind Memphis Design is what I look up to. The founding of this art movement was after the minimalist design style of the 1960s to 70s. The artist group’s dislike of minimalism had led to the creation of the design we know today. I want to keep a critical perspective on societal norms, and have a strong foundation and understanding of my philosophy and principles.</p>
+            </div>
+        </div>
+
+  
+    <div class="container" id="eleven">
+            <div class="text-block">
+                <h3 class="question" id="q11">Q11 <span>What does this reference/s communicate to you about how you should feel when engaging with your research experience?</span></h3>
+                <p class="answer" id="a11">The keywords that come to mind are playful, adventurous, and explorative.
+                    Additionally, I want the user to treat the experience as an opportunity to reflect on your own principles. Think objectively, how you would reinterpret the original experience and build it.
+                    </p>
+            </div>
+        </div>
+
+    <div class="container" id="twelve">
+            <div class="text-block">
+                <h3 class="question" id="q12">Q12 <span>What is the most frustrating part of the interaction to you and what makes that part frustrating?</span></h3>
+                <p class="answer" id="a12">Finding a way to enter the website start page was the biggest obstacle in this interaction.
+                    The instructions were too vague, me and my friend misunderstood ‘resize browser’ as ‘zoom in’. <br>
+                    Mobile centric design is sometimes hard to navigate with a mouse. I thought the overall idea was interesting, however, it requires some tweaking on the details for a seamless user experience.
+                    </p>
+            </div>
+        </div>
+
+    <div class="container" id="thirteen">
+            <div class="text-block">
+                <h3 class="question" id="q13">Q13 <span>What is the most satisfying part of the interaction to you and what makes that part satisfying?</span></h3>
+                <p class="answer" id="a13">Progressing time to unlock a new scene and hunting for secret elements was the most satisfying part. Setting small goals throughout the interaction treated me with small rewards, and kept me immersed in the interaction. </p>
+            </div>
+        </div>
 
     <br><br>
 
-    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae, qui quisquam sed, nam quam illum provident totam earum unde aspernatur pariatur? Incidunt cumque earum autem explicabo unde pariatur doloremque quos.</p>
-        
 
 </body>
 </html>
