@@ -34,10 +34,11 @@
     text-transform: capitalize;
   }
 
-  li{
+  /* li{
     line-height: 1.5rem;
     padding: 10px;
     background-color: aliceblue;
     margin: auto;
  
-  }
+  } */
+  /* there used to be a li control to differenciate the question and answer texts like this */
