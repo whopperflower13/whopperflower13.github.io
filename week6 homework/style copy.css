@@ -1,0 +1,267 @@
+*{
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  }
+
+body {
+  background: linear-gradient(rgb(28, 81, 255),lightblue,orange,pink,purple,navy);
+}
+
+/* // <uniquifier>: Use a unique and descriptive class name */
+
+.headingfont {
+  font-family: "Poiret One", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  color: #ffffff;
+}
+
+.bodyfont{
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #ffffff;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+  }
+
+  h3 {
+    font-size: 1.4rem;
+    font-family: "Poiret One", system-ui;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  span{ 
+    font-size: 1.2rem;
+    font-weight: 350;
+  }
+
+  .assignment-title {
+    text-align: center;
+  }
+
+ /* default code for hover transition */
+
+  .container {
+    position: relative;
+  }
+
+  .container {
+    width: 1fr;
+    height: 250px;
+    margin: 50px;
+    background-image: url(../assets/images.png);
+    background-size: cover;
+    transition: background-image 0.3s ease-in-out;
+  }
+  
+  /* hover transition of background image */
+
+  .container:hover {
+    background-image: url(../assets/images\ \(1\).png);
+  }
+
+  
+  .text-block {
+    position: static;
+    bottom: 20px;
+    right: 20px;
+    color: white; 
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+  }
+
+  /* hover transition of text */
+  .container:hover .text-block{
+    color: rgb(0, 162, 255);
+  }
+
+  .container .answer {
+    display: none;
+  }
+
+  /* transition of list objects in question 2 */
+  li {
+    display: none;
+  }
+
+  .container:hover .question {
+    display: none;
+    
+  }
+
+  .container:hover li {
+    display: list-item;
+    transition: all 0s ease-in-out;
+  }
+
+  .container:hover .answer {
+    display: inline;
+    transition: all 0s ease-in-out;
+  }
+
+/* custom code for each question transition*/
+/* each controls background image before and after hover, text color after hover */
+
+
+  #one {
+    background-image: url(../assets/images.png);
+  }
+  
+  #one:hover {
+    background-image: url(../assets/images\ \(1\).png);
+  }
+
+  #one:hover .text-block{
+    color: rgb(0, 179, 255);
+  }
+
+  #two {
+    background-image: url(../assets/images.png);
+  }
+  
+  #two:hover {
+    background-image: url(../assets/images\ \(1\).png);
+  }
+
+  #two:hover .text-block{
+    color: rgb(0, 149, 255);
+  }
+  
+  #three {
+    background-image: url(../assets/images3.jpeg);
+  }
+  
+  #three:hover {
+    background-image: url(../assets/images\ \(1\).png);
+  }
+
+  #three:hover .text-block{
+    color: rgb(0, 187, 255);
+  }
+  
+  #four {
+    background-image: url(../assets/images3.jpeg);
+  }
+  
+  #four:hover {
+    background-image: url(../assets/images\ \(1\).png);
+  }
+
+  #four:hover .text-block{
+    color: rgb(0, 170, 255);
+  }
+  #five {
+    background-image: url(../assets/images4.png);
+  }
+  
+  #five:hover {
+    background-image: url(../assets/images\ \(1\).png);
+  }
+
+  #five:hover .text-block{
+    color: rgb(255, 145, 0);
+  }
+  
+  #six {
+    background-image: url(../assets/images4.png);
+  }
+  
+  #six:hover {
+    background-image: url(../assets/images\ \(1\).png);
+  }
+
+  #six:hover .text-block{
+    color: rgb(255, 145, 0);
+  }
+  #seven  {
+    background-image: url(../assets/image5.webp);
+  }
+  
+  #seven:hover {
+    background-image: url(../assets/images\ \(1\).png);
+  }
+
+  #seven:hover .text-block{
+    color: rgb(255, 114, 126);
+  }
+  
+  #eight  {
+    background-image: url(../assets/image5.webp);
+  }
+  
+  #eight:hover {
+    background-image: url(../assets/images\ \(1\).png);
+  }
+
+  #eight:hover .text-block{
+    color: rgb(255, 114, 126);
+  }
+  #nine {
+    background-image: url(../assets/images2.png);
+  }
+  
+  #nine:hover {
+    background-image: url(../assets/images\ \(1\).png);
+  }
+
+  #nine:hover .text-block{
+    color: rgb(166, 0, 255);
+  }
+  
+  #ten {
+    background-image: url(../assets/images2.png);
+  }
+  
+  #ten:hover {
+    background-image: url(../assets/images\ \(1\).png);
+  }
+
+  #ten:hover .text-block{
+    color: rgb(166, 0, 255);
+  }
+  
+  #eleven {
+    background-image: url(../assets/images6.jpg);
+  }
+  
+  #eleven:hover {
+    background-image: url(../assets/images\ \(1\).png);
+  }
+
+  #eleven:hover .text-block{
+    color: rgb(24, 0, 181);
+  }
+  
+  #twelve {
+    background-image: url(../assets/images6.jpg);
+  }
+  
+  #twelve:hover {
+    background-image: url(../assets/images\ \(1\).png);
+  }
+
+  #twelve:hover .text-block{
+    color: rgb(0, 6, 187);
+  }
+  
+  #thirteen {
+    background-image: url(../assets/images6.jpg);
+  }
+  
+  #thirteen:hover {
+    background-image: url(../assets/images\ \(1\).png);
+  }
+
+  #thirteen:hover .text-block{
+    color: rgb(15, 0, 180);
+  }
