@@ -1,0 +1,57 @@
+.background {
+  background-image: url(screen.PNG);
+  background-size: 500px;
+  width: 500px;
+  height: 500px;
+  border: 2px solid;
+  color: pink;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.outer {
+  border: 2px dashed #e5e5cb68;
+  width: 280px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 100px;
+  margin-left: 4px;
+
+  gap: 1rem;
+}
+
+.timer {
+  border: 2px dashed #e5e5cb68;
+  width: 250px;
+  height: 100px;
+  margin-top: 21px;
+  text-align: center;
+  font: 70px sans-serif;
+  padding: 10px;
+}
+
+.controls {
+  border: 2px dashed #e5e5cb68;
+  width: 180px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  img {
+    max-height: 25px;
+    border-radius: 20%;
+  }
+}
+
+button {
+  border-color: rgb(255, 255, 255);
+  border-radius: 20%;
+  border-color: rgb(237, 212, 249);
+}

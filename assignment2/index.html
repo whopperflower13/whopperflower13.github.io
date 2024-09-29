@@ -11,37 +11,37 @@
   <body>
     minami's timer
     <!-- set an outer section -->
-    <div class="outer">
-      <!-- divide sections into three : timer, progress bar, and control panel, and -->
-      <section class="timer">
-        <button id="timer-button">timer</button>
-        <button id="break-timer-button">break timer</button>
-      </section>
-      <section class="controls">
-        <button id="play-pause-button">
-          <img src="https://img.icons8.com/ios-glyphs/30/play--v2.png" />
-        </button>
-        <button id="skip-button">
-          <img src="https://img.icons8.com/ios-glyphs/30/fast-forward.png" />
-        </button>
-        <button id="low-volume-button">
-          <img src="https://img.icons8.com/ios-glyphs/30/low-volume.png" />
-        </button>
-        <button id="increase-volume-button">
-          <img src="https://img.icons8.com/ios-glyphs/30/high-volume--v1.png" />
-        </button>
-        <!-- lofi blues for study -->
-        <audio
-          id="study-audio"
-          src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/535404258&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
-        ></audio>
-        <!-- classical music for breaks -->
-        <audio
-          id="break-audio"
-          src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1383731866&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
-        ></audio>
-      </section>
+    <div class="background">
+      <div class="outer">
+        <!-- divide sections into three : timer, progress bar, and control panel, and -->
+        <section class="timer">00 : 00</section>
+        <section class="controls">
+          <button id="play-pause-button">
+            <img src="play-button.PNG" />
+          </button>
+          <button id="skip-button">
+            <img src="skip-button.PNG" />
+          </button>
+          <button id="low-volume-button">
+            <img src="low-volume-button.PNG" />
+          </button>
+          <button id="increase-volume-button">
+            <img src="increase-volume-button.PNG" />
+          </button>
+          <!-- lofi blues for study -->
+          <audio
+            id="study-audio"
+            src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/535404258&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
+          ></audio>
+          <!-- classical music for breaks -->
+          <audio
+            id="break-audio"
+            src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1383731866&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
+          ></audio>
+        </section>
+      </div>
     </div>
+
     <br />
     <p id="credits">
       audio: <br />
