@@ -1,3 +1,5 @@
+/* use flexbox to align buttons and timer to image */
+/* set size and position background image in the center */
 .background {
   background-image: url(screen.PNG);
   background-size: 500px;

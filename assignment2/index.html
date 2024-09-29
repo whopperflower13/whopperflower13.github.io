@@ -6,29 +6,38 @@
     <title>Assignment2</title>
     <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="style.css" />
-    <script src="script.js" defer></script>
+    
   </head>
   <body>
+    <script src="script.js" defer></script>
     minami's timer
     <!-- set an outer section -->
     <div class="background">
       <div class="outer">
         <!-- divide sections into three : timer, progress bar, and control panel, and -->
         <section class="timer">
-          <p id="countdown">00 : 00</p>
+          <p id="countdown"></p>
+          <p id="break"></p>
 
           <!-- lofi blues for study -->
-          <audio
-            id="my-audio"
+          <audio id="my-audio"
             src="Minimal Piano No. 33, Fragment R.mp3"
           ></audio>
         </section>
         <section class="controls">
-          <button id="play-pause-button">
+          <!-- <button >
             <img id="play-button-img" src="play-button.PNG" />
           </button>
           <button id="skip-button">
             <img id="skip-button-img" src="skip-button.PNG" />
+          </button> -->
+          
+          </button>
+          <button type="button" class="timer__btn timer__btn--control timer__btn--start" id="play-pause-button">
+            <span class="material-icons"><img src = "play-button.PNG"/></span>
+          </button>
+          <button type="button" class="timer__btn timer__btn--reset">
+            <span class="material-icons"><img src="skip-button.PNG"></span>
           </button>
           <button id="low-volume-button">
             <img id="low-volume-button-img" src="low-volume-button.PNG" />
@@ -38,8 +47,6 @@
               id="increase-volume-button-img"
               src="increase-volume-button.PNG"
             />
-          </button>
-
           <!-- classical music for breaks -->
           <audio
             id="break-audio"

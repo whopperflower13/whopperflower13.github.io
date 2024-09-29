@@ -46,42 +46,162 @@
 //     }
 //   }, 60000);
 // }
+// document.querySelector("#break").style.display = "none";
 
-const startingMinutes = 0.1;
-let time = startingMinutes * 60;
+// const countdownEl = document.querySelector("#countdown");
+// console.log(countdownEl);
 
-const countdownEl = document.querySelector("#countdown");
-console.log(countdownEl);
+// const timer = document.querySelector(".timer");
+// console.log(timer);
 
-const timer = document.querySelector(".timer");
-console.log(timer);
+// const startingMinutes = 0.1;
+// let time = startingMinutes * 60;
 
-timer.addEventListener("click", updateCountdown);
+// function updateCountdown() {
+//   const interval = setInterval(() => {
+//     const minutes = Math.floor(time / 60);
+//     let seconds = time % 60;
 
-const interval = setInterval(updateCountdown, 1000);
+//     seconds = seconds < 10 ? "0" + seconds : seconds;
 
-function updateCountdown() {
-  const minutes = Math.floor(time / 60);
-  let seconds = time % 60;
+//     countdownEl.innerHTML = `${minutes} : ${seconds}`;
+//     time--;
 
-  seconds = seconds < 10 ? "0" + seconds : seconds;
+//     if (time < 0) {
+//       clearInterval(interval);
+//       console.log("end of study session!");
+//       //document.querySelector("#countdown").style.display = "none";
+//       //document.querySelector("#break").style.display = "block";
+//       //updateBreak();
+//     }
+//   }, 1000);
+// }
 
-  countdownEl.innerHTML = `${minutes} : ${seconds}`;
-  time--;
+// let breakMinutes = 5;
+// let breaktime = breakMinutes * 60;
 
-  if (time < 0) {
-    clearInterval(interval);
-    console.log("end of study session!");
+// const breakcountdownEl = document.querySelector("#break");
+// console.log(breakcountdownEl);
+
+// const breaktimer = document.querySelector(".timer");
+// console.log(breaktimer);
+
+// // timer.addEventListener("click", updateBreak);
+
+// function updateBreak() {
+//   const breakinterval = setInterval(() => {
+//     const minutes = Math.floor(time / 60);
+//     let seconds = breaktime % 60;
+
+//     seconds = seconds < 10 ? "0" + seconds : seconds;
+
+//     breakcountdownEl.innerHTML = `${minutes} : ${seconds}`;
+//     breaktime--;
+
+//     if (breaktime < 0) {
+//       clearInterval(breakinterval);
+//       console.log("end of break!");
+//       document.querySelector("#break").style.display = "none";
+//       document.querySelector("#countdown").style.display = "block";
+
+//       // updateCountdown();
+//     }
+//   }, 1000);
+// }
+const myAudio = document.querySelector("#my-audio");
+console.log(myAudio);
+
+class Timer {
+  constructor(root) {
+    root.innerHTML = Timer.getHTML();
+
+    this.el = {
+      minutes: root.querySelector(".timer__part--minutes"),
+      seconds: root.querySelector(".timer__part--seconds"),
+      control: document.querySelector(".timer__btn--control"),
+      reset: document.querySelector(".timer__btn--reset"),
+    };
+
+    this.interval = null;
+    this.remainingSeconds = 0;
+
+    this.el.control.addEventListener("click", () => {
+      if (this.interval === null) {
+        this.start();
+      } else {
+        this.stop();
+      }
+    });
+
+    this.el.reset.addEventListener("click", () => {
+      const inputMinutes = prompt("Enter number of minutes:");
+
+      if (inputMinutes < 60) {
+        this.stop();
+        this.remainingSeconds = inputMinutes * 60;
+        this.updateInterfaceTime();
+      }
+    });
+  }
+
+  updateInterfaceTime() {
+    const minutes = Math.floor(this.remainingSeconds / 60);
+    const seconds = this.remainingSeconds % 60;
+
+    this.el.minutes.textContent = minutes.toString().padStart(2, "0");
+    this.el.seconds.textContent = seconds.toString().padStart(2, "0");
+  }
+
+  updateInterfaceControls() {
+    if (this.interval === null) {
+      this.el.control.innerHTML = `<span class="material-icons"><img src = "play-button.PNG"></span>`;
+      this.el.control.classList.add("timer__btn--start");
+      this.el.control.classList.remove("timer__btn--stop");
+    } else {
+      this.el.control.innerHTML = `<span class="material-icons"><img src = "stop-button.PNG"></span>`;
+
+      this.el.control.classList.add("timer__btn--stop");
+      this.el.control.classList.remove("timer__btn--start");
+    }
+  }
+
+  start() {
+    if (this.remainingSeconds === 0) return;
+
+    this.interval = setInterval(() => {
+      this.remainingSeconds--;
+      this.updateInterfaceTime();
+
+      if (this.remainingSeconds === 0) {
+        this.stop();
+        myAudio.pause();
+      }
+    }, 1000);
+
+    this.updateInterfaceControls();
+  }
+
+  stop() {
+    clearInterval(this.interval);
+
+    this.interval = null;
+
+    this.updateInterfaceControls();
+  }
+
+  static getHTML() {
+    return `
+			<span class="timer__part timer__part--minutes">00</span>
+			<span class="timer__part">:</span>
+			<span class="timer__part timer__part--seconds">00</span>
+			
+		`;
   }
 }
 
-timer.addEventListener("00 : 00", switchTimer);
-
-function switchTimer() {}
+new Timer(document.querySelector(".timer"));
 
 //setting up audio
-const myAudio = document.querySelector("#my-audio");
-console.log(myAudio);
 
 //setting up the control buttons
 
@@ -92,15 +212,14 @@ const playImg = document.querySelector("#play-button-img");
 console.log(playImg);
 
 playPauseBtn.addEventListener("click", togglePlay);
+// playPauseBtn.addEventListener("click", updateCountdown);
 
 function togglePlay() {
   if (myAudio.paused || myAudio.ended) {
     myAudio.play();
     playImg.src = "stop-button.PNG";
-    updateCountdown.resume();
   } else {
     myAudio.pause();
-    updateCountdown.pause();
     playImg.src = "play-button.PNG";
   }
 }
@@ -108,9 +227,11 @@ function togglePlay() {
 const skipBtn = document.querySelector("#skip-button");
 console.log(skipBtn);
 
-skipBtn.addEventListener("click", toggleSkip);
+// skipBtn.addEventListener("click", toggleSkip);
 
-function toggleSkip() {}
+// function toggleSkip() {
+//   updateBreak();
+// }
 
 myAudio.addEventListener("volumechange", updateVolume);
 
