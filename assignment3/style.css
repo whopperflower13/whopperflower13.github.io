@@ -1,0 +1,88 @@
+.outer {
+  border: 2px dashed #7474597a;
+  /* min-width: 350px;
+  min-height: 200px; */
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  opacity: 1;
+  /* background-color: cornsilk; */
+  transition: opacity 0.5s ease, transform 0.5s ease, background-color 0.5s ease;
+}
+
+.frame {
+  border: 2px dashed pink;
+  min-width: 400px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+}
+
+h1 {
+  padding: 5px;
+  font-size: 1.5rem;
+  font: italic;
+  margin-left: 20px;
+}
+
+#contents {
+  flex-direction: row;
+  align-items: start;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+#listbox {
+  width: 70%;
+  height: 500px;
+  justify-content: center;
+  align-items: center;
+}
+
+#productdisplay {
+  flex-direction: row;
+  min-width: 100%;
+  min-height: 70%;
+}
+
+.smallouter {
+  border: 2px dashed #7474597a;
+  /* min-width: 200px;
+    min-height: 300px; */
+  min-width: 50%;
+  min-height: 100%;
+  display: flex;
+  opacity: 1;
+  padding: 0%;
+  justify-content: flex-start;
+  align-items: start;
+}
+
+#clothes {
+  border: 2px dashed pink;
+  /* min-width: 100%; */
+  min-height: 100%;
+  /* why can i not make it aligNNNN */
+  gap: 0px;
+}
+
+#tryon {
+  justify-content: space-around;
+  height: 500px;
+}
+
+#dropbox {
+  min-width: 200px;
+  height: 400px;
+}
+
+#subtotal {
+  min-height: 25%;
+  min-width: 100%;
+  padding: 0px;
+}
