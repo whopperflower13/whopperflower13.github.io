@@ -6,21 +6,27 @@
     <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="style.css" />
     <script src="script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ballet:opsz@16..72&family=Ibarra+Real+Nova:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
     <title>Document</title>
   </head>
   <body>
     <div class="frame">
-      <h1 id="title">Shopping Cart</h1>
+      <header id="title">Non-Judging Breakfast Club</header>
+      <h1>Shopping Cart</h1>
       <div class="outer" id="contents">
         <div class="outer" id="listbox">
           list
           <div class="outer" id="productdisplay">
             <div class="outer smallouter" id="productlist">productlist</div>
             <div class="outer smallouter" id="hanger">
-              <div class="outer" id="clothes" draggable="true">purple box</div>
+              <div class="clothes"> <img src="dress.png" id="dress" alt="dress" height="150x" draggable="true">dress</div>
+              <div class="clothes" > <img src="dress2.png"  id="dress2" alt="dress2" height="150px" draggable="true">dress2</div>
             </div>
+            <!-- add img and not let it draggable, only let outer box draggable to avoid -->
           </div>
-          <div class="outer" id="subtotal">subtotal</div>
+          <div class="outer" id="subtotal" >subtotal</div>
         </div>
 
         <div class="outer" id="tryon">
