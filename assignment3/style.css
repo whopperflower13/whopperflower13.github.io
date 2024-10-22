@@ -90,12 +90,13 @@ h1 {
   flex-direction: row;
   opacity: 1;
   padding: 0%;
-  justify-content: flex-start;
-  align-items: start;
+  justify-content: center;
+  align-items: center;
 }
 
 #productlist{
   min-width: 40%;
+
 }
 
 .clothes {
@@ -116,6 +117,7 @@ h1 {
 #dropbox {
   min-width: 200px;
   height: 400px;
+  background-image: url("mannequin.jpg");
 }
 
 #subtotal {

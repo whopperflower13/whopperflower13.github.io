@@ -34,8 +34,7 @@ let dropElement = null;
 dropBox.addEventListener("drop", handleDrop);
 function handleDrop() {
     if(dropElement = true){
-        dropBox.innerHTML -= `<img src=${draggedElement.src}>`;
-        dropBox.innerHTML += `<img src=${draggedElement.src}>`;
+        dropBox.innerHTML = `<img src=${draggedElement.src} />`;
         dropElement = true;
     }else{
         console.log(draggedElement.src);
@@ -47,7 +46,7 @@ function handleDrop() {
             //     console.log("dress2 is dropped");
             //     draggedElement = null;
             //   }
-            dropBox.innerHTML += `<img src=${draggedElement.src}>`;
+            dropBox.innerHTML = `<img src=${draggedElement.src} />`;
             dropElement = true;
     }
    
@@ -59,6 +58,6 @@ console.log(resetBtn);
 
 resetBtn.addEventListener("click", reset);
 function reset(){
-    dropBox.innerHTML -= `<img src=${draggedElement.src}>`;
+    dropBox.innerHTML = ``;
     dropElement = false;
 }
