@@ -104,9 +104,17 @@ h2 {
   align-items: center;
 }
 
-#productlist{
-  min-width: 40%;
+#list{
   flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  padding: 5px;
+  background-color: #e5aacc;
+}
+
+#productlist{
+  /* min-width: 40%; */
+  /* flex-direction: column; */
   justify-content: start;
   align-items: start;
   padding: 5px;
@@ -138,5 +146,18 @@ h2 {
   min-height: 25%;
   min-width: 100%;
   padding: 0px;
+}
+
+.help#product-price-list{
+  flex-direction: row;
+}
+
+.product-name{
+  width: 60%;
+  flex-direction: row;
+}
+
+.price-list{
+  width: 20%;
 }
 
