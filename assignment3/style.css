@@ -152,12 +152,17 @@ h2 {
   flex-direction: row;
 }
 
-.product-name{
-  width: 60%;
-  flex-direction: row;
+.product-price-list{
+  display: grid;
+  grid-template-columns: repeat(4, 35px);
+  gap: 10px;
+  grid-auto-rows: minmax(auto);
+  background-color: #e5aacc;
 }
 
-.price-list{
-  width: 20%;
+.one,.two,.three,.four{
+background-color: #e5aacc;
 }
-
+.one,.three{
+  grid-column: 1/4;
+}
