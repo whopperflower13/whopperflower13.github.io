@@ -1,0 +1,73 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    /* align the aspect ratio with 4:3 phone screen */
+    padding: 0;
+    aspect-ratio: 4 / 3;
+    width: 500px;
+    position: relative;
+    overflow: hidden;
+
+    /* background image */
+    background-image: url('ggblog-frame.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    text-align: center;
+}
+
+
+
+/* top margin to set the blog area */
+.top {
+    width: 500px;
+    height: 32px;
+}
+
+/* area that blog will be visible */
+.blog {
+    width: 500px;
+    height : 311px;
+   
+    justify-content: end;
+    align-items: start;
+}
+
+/* bottom margin */
+.content {
+    width: 500px;
+    aspect-ratio: 1200 / 75;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    text-align: center;
+}
+
+/* button */
+.button {
+    display: flex;
+    width: 100px;
+    height: 32px;
+    border: 0;
+    outline: none;
+    background-color: transparent;
+    /* border: red 10px solid; */
+       background-image: url('close-btn.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; 
+    cursor: pointer;
+}
+
+
+
+
