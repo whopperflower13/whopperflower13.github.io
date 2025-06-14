@@ -1,7 +1,18 @@
 const viewBtn = document.querySelector("#view-btn")
 console.log(viewBtn)
 
-viewBtn.addEventListener("click", openLink('./mail/mail.htmls'))
+let currentlocation = window.location
+console.log(currentlocation)
+
+const openLink = (url) => {
+    window.location.href = url
+} 
+
+viewBtn.addEventListener("click", () => {
+    console.log("button clicked!")
+
+    openLink('./mail/mail.html')
+})
 
 
 // const playImg = document.querySelector("#play-button-img");
