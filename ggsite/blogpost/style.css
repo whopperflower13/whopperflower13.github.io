@@ -9,6 +9,10 @@
     1px 1px 0 black; /* Creates a 1px black outline */
 }
 
+html,body {
+    overflow: hidden;
+}
+
 .container {
     /* align the aspect ratio with 4:3 phone screen */
     padding: 0;
@@ -46,6 +50,7 @@
     position: relative;
     overflow: hidden;  /* hide overflowing blog content */
     flex-grow: 1;
+    flex-direction: column;
    
     /* justify-content: end;
     align-items: start; */
@@ -81,9 +86,91 @@
 /* logo */
 .logo {
     position: absolute;
-    
+    top: 0px;
+    width: 500px;
+    height: 35px;
+    color: antiquewhite;
+    text-align: left;
+    align-items: center;
+    padding-left: 10px;
     font-size: 1.3rem;
 }
+
+.header {
+    position: relative;
+    top: 35px;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+}
+
+#gossip {
+    color: orange;
+}
+
+#pics {
+    color: rgb(255, 255, 164);
+}
+
+#parties {
+    color: rgb(255, 130, 245);
+}
+
+#links {
+    color: rgb(175, 238, 144);
+}
+
+.scrollable-blog-content {
+    position: absolute;
+    top: 75px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+     padding-left: 20px;
+     padding-right: 20px;
+     text-align: left;
+
+     /* --- SCROLLBAR HIDING STYLES --- */
+
+    /* For Webkit browsers (Chrome, Safari, Edge, Opera) */
+    &::-webkit-scrollbar {
+        width: 0; /* Make the scrollbar thin */
+        background: transparent; /* Make the background transparent */
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: transparent; /* Make the thumb transparent */
+    }
+
+    /* For Firefox */
+    scrollbar-width: none; /* Hide scrollbar entirely */
+    scrollbar-color: transparent transparent; /* Thumb and track colors */
+
+    /* For Internet Explorer and older Edge */
+    -ms-overflow-style: none; /* Hide scrollbar entirely */
+}
+
+#disclaimer {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-style: italic;
+    font-size: 0.7rem;
+    
+}
+
+h1 {
+    padding: 30px;
+    font-size: 1.7rem;
+    font-style: bold;
+    text-align: center;
+}
+
+
 
 
 
