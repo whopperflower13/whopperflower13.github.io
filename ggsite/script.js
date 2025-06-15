@@ -11,7 +11,7 @@ const openLink = (url) => {
 viewBtn.addEventListener("click", () => {
     console.log("button clicked!")
 
-    openLink('./mail/mail.html')
+    openLink('./blogpost/ggblog1.html')
 })
 
 
